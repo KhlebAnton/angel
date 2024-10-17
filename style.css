@@ -596,6 +596,7 @@ svg {
     align-items: center;
     justify-content: space-between;
     margin-top: 4.6rem;
+    gap: 5px;
 }
 
 .item-psyho {
@@ -606,6 +607,7 @@ svg {
     font-weight: 400;
     font-size: 1.56rem;
     width: fit-content;
+    text-align: center;
 }
 
 .mobile {
