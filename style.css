@@ -1,0 +1,945 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Thin.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-ExtraLight.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat-SemiBold.ttf');
+    font-weight: 500;
+}
+
+.planet {
+    position: absolute;
+    z-index: -1;
+    top: -4.56rem;
+    bottom: -6.43rem;
+    left: -8.43rem;
+    right: -8.125rem;
+    background: url(./img/planet1.png) 50%/ cover;
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #13151D;
+    font-size: 0.93vw;
+    color: #FFFFFF;
+    font-weight: 200;
+    min-width: 430px;
+    overflow-x: hidden;
+
+
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: url('./img/bg-stars.png') 50% / contain;
+}
+
+
+.reviews-img {
+    width: 100%;
+}
+
+.container {
+
+    margin: 0 auto;
+
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.logo {
+    width: 8.875rem;
+    height: 7.75rem;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-item {
+    transition: .3s;
+    width: 9.875rem;
+    height: 3.06rem;
+    border: 0.0625rem solid #FFFFFF;
+    border-radius: 1.56rem;
+
+}
+
+.nav-item:hover {
+    border: 0.0625rem solid #ffffff71;
+}
+
+.nav-item a {
+    font-size: 1.25rem;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-wrap: nowrap;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.81rem;
+    position: relative;
+    z-index: 2;
+}
+
+main .container {
+    padding: 0 8.125rem;
+    position: relative;
+    z-index: 5;
+}
+
+.header-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
+    user-select: none;
+    /* Стандартный синтаксис */
+    cursor: pointer;
+}
+
+.header {
+    padding: 0 15.125rem;
+    padding-top: 4.56rem;
+    padding-bottom: 6.43rem;
+    height: 69.81rem;
+    text-align: center;
+    position: relative;
+
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+
+h1 {
+    font-size: 20.625rem;
+    font-weight: 200;
+    line-height: 21.875rem;
+    margin-top: 2.5rem;
+}
+
+.header-desc p {
+    font-size: 1.93rem;
+    line-height: 2.3925rem;
+    margin: 0 auto;
+    font-weight: 100;
+}
+
+.btn-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    min-height: 6.75rem;
+    font-weight: 600;
+    border: 0.08rem solid #FFFFFF;
+    background: #ffffff56;
+    border-radius: 5.25rem;
+    padding: 0 5.625rem;
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
+    user-select: none;
+    /* Стандартный синтаксис */
+    cursor: pointer;
+    max-width: fit-content;
+    text-wrap: nowrap;
+    transition: .2s;
+}
+
+.btn-action:hover {
+    background: #ffffff6b;
+}
+
+.btn-action:active {
+    transform: scale(.95);
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3.625rem;
+    border-bottom: 0.125rem solid #FFFFFF;
+    width: fit-content;
+    margin-bottom: 1.75rem;
+    text-transform: uppercase;
+}
+
+
+.about .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 9.37rem;
+}
+
+main {
+    position: relative;
+}
+
+.about-desc {
+    flex-shrink: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    gap: 0.625rem;
+    max-width: 45.125rem;
+    width: 50%;
+}
+
+.about {
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    background: url('./img/photo.png') 100% 100% / contain no-repeat;
+}
+
+.about::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 53%;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    background: url('./img/red-light.png') 100% 100% / contain no-repeat;
+}
+
+
+.about-desc p {
+    font-size: 1.63rem;
+    font-weight: 100;
+    line-height: 1.99rem;
+
+}
+
+.planet-item {
+    margin-top: 3.125rem;
+    width: 22.875rem;
+    height: 22.875rem;
+    border-radius: 22.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0rem 0rem 3.875rem 0.625rem #ffd466a1;
+    position: relative;
+
+}
+
+.planet-item .text-planet {
+    position: absolute;
+
+}
+
+.services h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.services .container {
+    padding: 0 6.875rem;
+}
+
+.planet-cards {
+    background: radial-gradient(65.42% 65.42% at 25.8% 24.63%, #6F7197 0%, #282843 60.5%, #090818 81.5%, #1B1F36 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+}
+
+.planet-fate {
+    background: radial-gradient(65.42% 65.42% at 25.8% 24.63%, #977E6F 0%, #433028 49%, #181308 81.5%, #36281B 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+}
+
+.planet-relation {
+    background: radial-gradient(69.4% 69.4% at 76.91% 16.12%, #B16D6D 0%, #432828 50.5%, #180808 74.82%, #361B1B 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+}
+
+.planet-chakrs {
+    background: radial-gradient(63.39% 63.39% at 68.99% 18.44%, #976F96 0%, #412843 33.33%, #150818 66.67%, #2A1B36 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+
+}
+
+.planet-cards::after {
+    content: '';
+    position: absolute;
+    width: 16.31rem;
+    height: 16.31rem;
+    background: url('./img/cards.png') 50% / contain no-repeat;
+}
+
+.planet-fate::after {
+    content: '';
+    position: absolute;
+    width: 17.125rem;
+    height: 17.125rem;
+    background: url('./img/fate.png') 50% / contain no-repeat;
+}
+
+.planet-relation::after {
+    content: '';
+    position: absolute;
+    width: 17.93rem;
+    height: 17.93rem;
+
+    background: url('./img/relation.png') 50% / contain no-repeat;
+}
+
+.planet-chakrs::after {
+    content: '';
+    position: absolute;
+    width: 17.93rem;
+    height: 17.93rem;
+    transform: translateY(1.25rem);
+    background: url('./img/chacrs.png') 50% / contain no-repeat;
+}
+
+.planet-cards .text-planet {
+    background: url('./img/text-planet-1.png') 50% / contain no-repeat;
+    width: 24.56rem;
+    height: 9.31rem;
+    left: -2%;
+    bottom: 70%;
+}
+
+.planet-fate .text-planet {
+    background: url('./img/text-planet-2.png') 50% / contain no-repeat;
+    width: 23rem;
+    height: 7.81rem;
+    left: 0;
+    bottom: 77%;
+}
+
+.planet-relation .text-planet {
+    background: url('./img/text-planet-3.png') 50% / contain no-repeat;
+    width: 27.93rem;
+    height: 13.43rem;
+    left: -11%;
+    bottom: 53%;
+}
+
+.planet-chakrs .text-planet {
+    background: url('./img/text-planet-4.png') 50% / contain no-repeat;
+    width: 24.375rem;
+    height: 8.81rem;
+    left: -2.5%;
+    bottom: 72%;
+}
+
+.planet-items {
+    margin-top: 3.56rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.planet-container-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.planet-container-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6.25rem;
+}
+
+.eziterik-services .btn-action {
+    margin: 0 auto;
+    transform: translateY(-6.25rem);
+}
+
+.eziterik-services {
+    padding-top: 10rem;
+    background: url('./img/serv_light.png') 50% / cover no-repeat;
+}
+
+section {
+    padding: 2.75rem 0;
+}
+
+
+
+.contact-link-items {
+    position: relative;
+    z-index: 1;
+}
+
+.reviews {
+    padding-top: 8.375rem;
+    position: relative;
+    height: 69.81rem;
+}
+
+.reviews .container {
+    padding: 0 8.128rem;
+}
+
+.reviews h2 {
+    text-align: right;
+
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+
+}
+
+.footer h2 {
+    z-index: 3;
+}
+
+.footer .btn-action {
+    z-index: 3;
+}
+
+
+.footer .container {
+    padding: 4.68rem 13.1255rem 9.93rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-link-items {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 4.75rem;
+    margin-bottom: 6.25rem;
+}
+
+.contact-link-item-link {
+    font-size: 2.125rem;
+    margin-top: 3.875rem;
+    font-weight: 200;
+}
+
+svg {
+    transition: .2s;
+}
+
+.contact-link-item:hover svg {
+    transform: scale(1.1);
+}
+
+.contact-link-item-link::before {
+    content: '';
+    width: 0%;
+    height: 0.125rem;
+    background: #FFFFFF;
+    border-radius: 0.125rem;
+    top: 100%;
+    display: block;
+    position: absolute;
+    transition: .5s;
+    opacity: 0.8;
+}
+
+.contact-link-item-link:hover::before {
+    width: 100%;
+}
+
+.contact-link-item-link {
+    position: relative;
+}
+
+.review-mobile,
+.planet-items-mobile {
+    display: none !important;
+}
+
+.slid-review:first-child {
+    min-width: 23.187rem;
+    max-width: 23.187rem;
+}
+
+.slid-review {
+
+    min-width: 20.625rem;
+    height: fit-content;
+    max-width: 20.625rem;
+    scroll-snap-align: center;
+}
+
+.psyho-services {
+    height: 69.81rem;
+    position: relative;
+
+}
+
+.psyho-services .container {
+    height: 90%;
+    padding: 0 11.56rem;
+}
+
+.psyho-services .items-psyho-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.psyho-services::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    bottom: calc(0rem - 69.81rem);
+    right: 0;
+    background: url('./img/psyho_bg.png') 50% / cover no-repeat;
+}
+
+.swiper-reviews {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    scroll-snap-type: x mandatory;
+}
+
+.items-psyho {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4.6rem;
+}
+
+.item-psyho {
+    padding: 1.56rem 1.68rem;
+    background: #FFFFFF1A;
+    border-radius: 1.75rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.56rem;
+    width: fit-content;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width:1200px) {
+    html {
+        font-size: 12px;
+    }
+
+    .header {
+        padding: 0 5rem;
+        padding-top: 4.56rem;
+        padding-bottom: 6.43rem;
+        height: 69.81rem;
+        text-align: center;
+        position: relative;
+    }
+
+    .about .container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 2.5rem;
+    }
+
+    .services .container {
+        padding: 0 2rem;
+    }
+
+    .reviews .container {
+        padding: 0 2rem;
+    }
+
+    .footer .container {
+        padding: 4.68rem 2rem 9.93rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .about-desc {
+        width: auto;
+    }
+}
+
+@media (max-width:900px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:720px) {
+    html {
+        font-size: 7.5px;
+        width: 100vw;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .header-nav.mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 13.86rem;
+        font-weight: 200;
+        line-height: auto;
+        margin-top: 2.5rem;
+    }
+
+    .header-desc p {
+        font-size: 1.33rem;
+    }
+
+    .header {
+        min-height: 100vh;
+    }
+
+    .header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        height: 100%;
+        position: relative;
+    }
+
+    .planet {
+        position: absolute;
+        z-index: -1;
+        top: -4.56rem;
+        bottom: -6.43rem;
+        left: -8.43rem;
+        right: -8.125rem;
+        background: url('./img/bg_mobile.png') 50% / cover;
+    }
+
+    .header .btn-action {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .about {
+        min-height: 100vh;
+    }
+
+    .about .container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 10%;
+    }
+
+    .about::after {
+        width: 110%;
+    }
+
+    .about::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        background: url(./img/photo.png) 100% 100% / contain no-repeat;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    .eziterik-services {
+        min-height: 100vh;
+    }
+
+    .planet-items-desktop {
+        display: none;
+    }
+
+    .planet-items-mobile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        height: 80vh;
+    }
+
+    .swiper {
+        overflow: visible !important;
+        display: flex !important;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+    }
+
+    .swiper-slide {
+        display: flex !important;
+    }
+
+    .swiper-pagination {
+        margin-bottom: 30%;
+    }
+    .swiper-pagination-bullet {
+        width: 15px !important;
+        height: 15px !important;
+        background: #D9D9D94D !important;
+        border: 1px solid #FFFFFF;
+        opacity: 1 !important;
+
+    }
+    .swiper-pagination-bullet-active{
+        background: #ffffff !important;
+    }
+    .planet-item {
+        width: 37.88rem;
+        height: 37.88rem;
+    }
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .planet-cards::after {
+        width: 26.31rem;
+        height: 26.31rem;
+    }
+
+    .planet-fate::after {
+        width: 27.125rem;
+        height: 27.125rem;
+    }
+
+    .planet-relation::after {
+        width: 27.93rem;
+        height: 27.93rem;
+    }
+
+    .planet-chakrs::after {
+        width: 27.93rem;
+        height: 27.93rem;
+        transform: translateY(1.25rem);
+    }
+
+    .planet-cards .text-planet {
+        width: 44.56rem;
+        height: 20.31rem;
+        left: -8%;
+        bottom: 70%;
+    }
+
+    .planet-fate .text-planet {
+        width: 43rem;
+        height: 17.81rem;
+        left: -6%;
+        bottom: 75%;
+    }
+
+    .planet-relation .text-planet {
+        width: 47.93rem;
+        height: 23.43rem;
+        left: -13%;
+        bottom: 53%;
+    }
+
+    .planet-chakrs .text-planet {
+        width: 44.375rem;
+        height: 18.81rem;
+        left: -8%;
+        bottom: 70%;
+    }
+    .psyho-services {
+        min-height: 100vh;
+        padding-top: 12rem;
+    }
+    .psyho-services::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        bottom: calc(0rem - 100vh);
+        right: 0;
+        background: url(./img/bg-pshyho-mobile.png) 50% / cover no-repeat;
+    }
+    .item-psyho {
+        padding: 1.46rem 1.18rem;
+        font-size: 1.36rem;
+    }
+    .review-desktop {
+        display: none;
+    }
+    .review-mobile {
+        display: flex !important;
+        min-height: 60vh;
+        margin-top: 30px;
+    }
+    
+    .slid-review {
+        
+        min-width: 95%;
+    }
+    .reviews {
+        min-height: 100vh;
+        height: auto;
+        padding-top: 150px;
+    }
+    .psyho-services .items-psyho-container {
+        height: 85%;
+    }
+    .slid-review:first-child {
+        min-width: auto;
+        max-width: none;
+        min-width: 100%;
+    }
+    .reviews h2 {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .reviews-img .swiper-pagination {
+        margin-bottom: 0;
+        transform: translateY(40px);
+    }
+    .footer {
+        min-height: 100vh ;
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .footer .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        flex-grow: 3;
+    }
+    .contact-link-items {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 45px;
+    }
+    .contact-link-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+       
+    }
+    .contact-link-item-link {
+        margin: 0;
+        font-size: 19px;
+    }
+    .contact-link-item-img svg{
+        transform: scale(1.5);
+    }
+}
