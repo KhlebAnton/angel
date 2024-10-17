@@ -725,6 +725,7 @@ svg {
 
     .about {
         min-height: 100vh;
+        padding-bottom: 60vh;
     }
 
     .about .container {
