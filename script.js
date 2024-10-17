@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // open watsapp
 function openWats() {
-    window.open('https://wa.me/79168255555', "_blank")
+    window.open('https://wa.me/79168255535', "_blank")
 }
 
 const swiper = new Swiper('.swiper', {

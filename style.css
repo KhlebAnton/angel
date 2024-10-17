@@ -272,7 +272,7 @@ main {
     bottom: 0;
     right: 0;
     height: 100%;
-    background: url('./img/photo.png') 100% 100% / contain no-repeat;
+    background: url('./img/photo1.png') 100% 100% / contain no-repeat;
 }
 
 .about::after {
@@ -698,7 +698,7 @@ svg {
     }
 
     .header {
-        min-height: 100vh;
+        min-height: 932px;
     }
 
     .header .container {
@@ -726,7 +726,7 @@ svg {
     }
 
     .about {
-        min-height: 100vh;
+        min-height: 932px;
         padding-bottom: 60vh;
     }
 
@@ -748,7 +748,7 @@ svg {
         bottom: 0;
         right: 0;
         height: 100%;
-        background: url(./img/photo.png) 100% 100% / contain no-repeat;
+        background: url(./img/photo1.png) 100% 100% / contain no-repeat;
     }
 
     h2 {
@@ -756,7 +756,7 @@ svg {
     }
 
     .eziterik-services {
-        min-height: 100vh;
+        min-height: 932px;
     }
 
     .planet-items-desktop {
@@ -858,7 +858,7 @@ svg {
         bottom: 70%;
     }
     .psyho-services {
-        min-height: 100vh;
+        min-height: 932px;
         padding-top: 12rem;
     }
     .psyho-services::before {
@@ -890,7 +890,7 @@ svg {
         min-width: 95%;
     }
     .reviews {
-        min-height: 100vh;
+        min-height: 932px;
         height: auto;
         padding-top: 150px;
     }
@@ -911,7 +911,7 @@ svg {
         transform: translateY(40px);
     }
     .footer {
-        min-height: 100vh ;
+        min-height: 932px ;
         padding-top: 150px;
         display: flex;
         flex-direction: column;
